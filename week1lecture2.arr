@@ -39,3 +39,11 @@ overlay(circle(30, "solid", "blue"), rectangle(80, 60, "solid", "yellow"))
 above((g), (v))
 below((g), (v))
 beside((g), (v))
+
+octagon_1 = regular-polygon(50, 8, "solid", "red")
+octagon_2 = regular-polygon(52, 8, "solid", "white")
+
+H = overlay(octagon_1, octagon_2)
+Stop = text("STOP", 30, "white")
+
+overlay(Stop, H)
